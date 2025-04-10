@@ -76,12 +76,11 @@ MIT License
 ---
 
 **Author:**
+
 Aya Abdelatty
+
 Ereny Abdelmesieh
+
 Mariam Yasser 
 
-```
 
----
-
-Let me know if you want a version with Ubuntu compatibility or want to include screenshots or badges!
