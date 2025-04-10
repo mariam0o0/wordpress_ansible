@@ -5,15 +5,21 @@ This project automates the deployment of a complete WordPress environment using 
 ## 📦 Project Structure
 
 ```
-wordpress_ansible/
+mywordpress_ansible/
 ├── group_vars/
 │   └── all.yaml
 ├── inventory.ini
 ├── mywebsite.yaml
 ├── roles/
 │   ├── apache/
+│   │   └── tasks/
+│   │       └── main.yaml
 │   ├── mariadb/
-│   └── wordpress/
+│   │   └── tasks/
+│   │       └── main.yaml
+│   └── php/
+│       └── tasks/
+│           └── main.yaml
 └── README.md
 ```
 
