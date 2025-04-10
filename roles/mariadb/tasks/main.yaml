@@ -1,0 +1,30 @@
+- name: Install Python PyMySQL library
+  dnf:
+    name: python3-PyMySQL
+    state: present
+
+- name: Install MariaDB server
+  dnf:
+    name: mariadb-server
+    state: present
+    update_cache: yes
+
+- name: Start and enable MariaDB service
+  service:
+    name: mariadb
+    state: started
+    enabled: yes
+- name: Create WordPress database
+  mysql_db:
+    name: "{{ db_name }}"
+    state: present
+    login_unix_socket: /var/lib/mysql/mysql.sock
+
+- name: Create WordPress DB user
+  mysql_user:
+    name: "{{ db_user }}"
+    password: "{{ db_password }}"
+    priv: "{{ db_name }}.*:ALL"
+    state: present
+    login_unix_socket: /var/lib/mysql/mysql.sock
+~                                                  
