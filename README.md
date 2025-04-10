@@ -69,12 +69,6 @@ To install it manually (if needed):
 ansible-galaxy collection install community.mysql
 ```
 
-## 📄 License
-
-MIT License
-
----
-
 **Author:**
 
 Aya Abdelatty
