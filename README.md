@@ -5,7 +5,7 @@ This project automates the deployment of a complete WordPress environment using 
 ## 📦 Project Structure
 
 ```
-mywordpress/
+wordpress_ansible/
 ├── group_vars/
 │   └── all.yaml
 ├── inventory.ini
