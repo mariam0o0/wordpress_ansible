@@ -1,8 +1,9 @@
-- name: Install and configure WordPress
-  hosts: webservers
+- name: Deploying wordpress
+  hosts: all
   become: true
 
   roles:
-    - mariadb
     - apache
     - php
+    - mariadb
+    - wordpress
